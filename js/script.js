@@ -1,10 +1,13 @@
+// Mapeando elementos x e o
 let x = document.querySelector('.x');
 let o = document.querySelector('.o');
 
 let boxes = document.querySelectorAll(".box");
 
+// Mapeando botões de escolha do menu inicial
 let buttons = document.querySelectorAll("#buttons-container button");
 
+// Mapeando mensagem de vitoria ou velha
 let messageContainer = document.querySelector("#message");
 let messageText = document.querySelector("#message p");
 
@@ -75,7 +78,6 @@ for(let i = 0; i < buttons.length; i++){
 
     });
 
-
 }
 
 function checkEl(player1, player2){
@@ -112,9 +114,11 @@ function checkWinCondition() {
         if(b1Child == 'x' && b2Child == 'x' && b3Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b1Child == 'o' && b2Child == 'o' && b3Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -127,9 +131,11 @@ function checkWinCondition() {
         if(b4Child == 'x' && b5Child == 'x' && b6Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b4Child == 'o' && b5Child == 'o' && b6Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -142,9 +148,11 @@ function checkWinCondition() {
         if(b7Child == 'x' && b8Child == 'x' && b9Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b7Child == 'o' && b8Child == 'o' && b9Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -158,9 +166,11 @@ function checkWinCondition() {
         if(b1Child == 'x' && b4Child == 'x' && b7Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b1Child == 'o' && b4Child == 'o' && b7Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -173,9 +183,11 @@ function checkWinCondition() {
         if(b2Child == 'x' && b5Child == 'x' && b8Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b2Child == 'o' && b5Child == 'o' && b8Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -188,9 +200,11 @@ function checkWinCondition() {
         if(b3Child == 'x' && b6Child == 'x' && b9Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b3Child == 'o' && b6Child == 'o' && b9Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -205,9 +219,11 @@ function checkWinCondition() {
         if(b1Child == 'x' && b5Child == 'x' && b9Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b1Child == 'o' && b5Child == 'o' && b9Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -220,9 +236,11 @@ function checkWinCondition() {
         if(b3Child == 'x' && b5Child == 'x' && b7Child == 'x'){
             // x
             declareWinner('x');
+
         } else if(b3Child == 'o' && b5Child == 'o' && b7Child == 'o'){
             // o
             declareWinner('o');
+
         }
     }
 
@@ -238,6 +256,7 @@ function checkWinCondition() {
 
     if(counter == 9){
         declareWinner('Fail');
+        
     }
 }
 
